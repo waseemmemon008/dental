@@ -1,0 +1,27 @@
+  
+
+/* CSS for 5-star rating system (left to right) */
+.rating {
+  direction: rtl;
+  unicode-bidi: bidi-override; 
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #ddd;
+  float: right;
+  cursor: pointer;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #ffc107;
+}
+
+
